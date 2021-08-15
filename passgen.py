@@ -37,7 +37,7 @@ if len(sys.argv) > 1:
             key = filekey.read()
         fernet = Fernet(key)
         try:
-            with open('entmp.txt', 'rb') as file:
+            with open('tmp.txt', 'rb') as file:
                 psf = file.read()
         except:
             print("File not found!")
